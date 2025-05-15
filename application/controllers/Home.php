@@ -24,13 +24,17 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
+		$this->load->library('blade');
+
 		$data['title'] = 'SMK Yadika Soreang';
 		$this->load->view('komponen/header', $data);
-		// $this->load->view('komponen/navbar', $data);
-		$this->load->view('komponen/navbar-tailwind');
-		$this->load->view('home/home.php');
-		// $this->load->view('home/index', $data);
-		// $this->load->view('komponen/footer', $data);
+		// $this->load->view('komponen/header_old', $data);
+		$this->blade->view('komponen.navbar');
+		// $this->load->view('komponen/navbar_old', $data);
+		$this->load->view('home/index', $data);
+		// $this->load->view('home/index_old', $data);
+		$this->load->view('komponen/footer');
+		// $this->load->view('komponen/footer_old', $data);
 	}
 	public function profile()
 	{
