@@ -29,7 +29,7 @@ class Home extends CI_Controller {
 		$data['title'] = 'SMK Yadika Soreang';
 		$this->load->view('komponen/header', $data);
 		// $this->load->view('komponen/header_old', $data);
-		$this->blade->view('komponen.navbar');
+		$this->blade->view('blade.navbar');
 		// $this->load->view('komponen/navbar_old', $data);
 		$this->load->view('home/index', $data);
 		// $this->load->view('home/index_old', $data);
