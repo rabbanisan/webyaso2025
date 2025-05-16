@@ -12,7 +12,6 @@
 	},
 	"require": {
         "phpoffice/phpspreadsheet": "^1.23",
-				"duncan3dc/blade": "^4.16"
     },
    
 	"suggest": {
