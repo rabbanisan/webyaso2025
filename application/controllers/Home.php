@@ -26,11 +26,13 @@ class Home extends CI_Controller
 	public function index()
 	{
 		$data['title'] = 'SMK Yadika Soreang';
+		// $this->load->view('komponen/header', $data);
 		$this->load->view('komponen/header-new', $data);
 		// $this->load->view('komponen/navbar', $data);
 		$this->load->view('komponen/navbar-new', $data);
 		$this->load->view('home/index', $data);
-		$this->load->view('komponen/footer', $data);
+		// $this->load->view('komponen/footer', $data);
+		$this->load->view('komponen/footer-new', $data);
 	}
 	public function profile()
 	{

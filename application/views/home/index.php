@@ -94,15 +94,15 @@
     }
 
     /* Responsif untuk tampilan kecil */
-    @media (max-width: 768px) {
+    @media (min-width: 320px) and (max-width: 767px) {
       .carousel-item {
         height: 45vh;
         /* Menyesuaikan tinggi gambar untuk perangkat kecil */
       }
 
       .carousel-caption {
-        font-size: 1.2rem;
-        padding: 0 5px;
+        /* font-size: 1.2rem; */
+        /* padding: 0 5px; */
         /* Mengurangi padding horizontal */
       }
 
@@ -132,7 +132,7 @@
     }
   </style>
 
-  <style>
+  <!-- <style>
     .carousel-item {
       position: relative;
       height: 60vh;
@@ -297,8 +297,8 @@
       opacity: 1;
       transform: translateY(0);
     }
-  </style>
-  </style>
+  </style> -->
+
   <div id="myCarousel"
     class="carousel slide"
     data-bs-ride="carousel"

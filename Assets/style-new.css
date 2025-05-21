@@ -223,8 +223,8 @@ body {
 
 /* alamat */
 .alamat {
-	height: 388px;
-	padding: 70px 0;
+	height: fit-content;
+	padding: 30px 0;
 }
 
 .alamat img {
@@ -237,8 +237,8 @@ body {
 }
 
 .alamat .CTA-page {
-	justify-content: end;
-	margin-top: -100px;
+	/* justify-content: end; */
+	margin-top: 100px;
 }
 
 /* End */
@@ -484,7 +484,7 @@ footer img {
 
 	/* alamat */
 	.alamat {
-		padding: 25px;
+		/* padding: 25px; */
 	}
 
 	.alamat img {
