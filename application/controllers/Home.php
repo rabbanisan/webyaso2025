@@ -1,11 +1,12 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Home extends CI_Controller
+{
 
-	public function __construct(){
+	public function __construct()
+	{
 		parent::__construct();
-		
 	}
 	/**
 	 * Index Page for this controller.
@@ -25,8 +26,9 @@ class Home extends CI_Controller {
 	public function index()
 	{
 		$data['title'] = 'SMK Yadika Soreang';
-		$this->load->view('komponen/header1', $data);
-		$this->load->view('komponen/navbar', $data);
+		$this->load->view('komponen/header-new', $data);
+		// $this->load->view('komponen/navbar', $data);
+		$this->load->view('komponen/navbar-new', $data);
 		$this->load->view('home/index', $data);
 		$this->load->view('komponen/footer', $data);
 	}

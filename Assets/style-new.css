@@ -15,8 +15,8 @@ body {
 /* Navbar */
 
 .mynavbar {
-	padding: 20px 120px;
-	background-color: blueviolet !important;
+	padding: 20px 50px;
+	background-color: white !important;
 	border-bottom: 0.1px solid rgb(228, 227, 227);
 }
 
@@ -52,22 +52,25 @@ body {
 /* End */
 
 /* Jumbotron */
-.jumbotron {
-	height: 100vh;
-}
+/* .jumbotron {
+	height: 800vh;
+	display: flex;
+	justify-content: center;
+	
+} */
 
 .jumbotron h1 {
-	margin-top: 150px;
+	margin-top: 120px;
 	font-size: 50px;
 }
 
-.jumbotron img {
-	position: relative;
-	width: 70rem;
+/* .jumbotron img {
+	position: absolute;
+	width: 10%;
 	left: -460px;
 	top: 50px;
 	z-index: -1;
-}
+} */
 
 .logo-homepage {
 	display: none;
@@ -321,23 +324,52 @@ footer img {
 /* phone */
 @media (min-width: 320px) and (max-width: 767px) {
 	/* Navbar */
-	.navbar {
+	.mynavbar {
 		padding: 10px 5px;
 	}
 
-	.navbar-nav {
+	.mynavbar-nav {
 		padding: 10px;
 	}
 
-	.navbar-nav a {
+	.mynavbar-nav a {
 		border-bottom: 0.1px solid rgb(228, 227, 227);
 	}
 
-	.navbar-nav .btn {
+	.mynavbar-nav .btn {
 		margin-left: 0;
 		margin-top: 10px;
 	}
 
+	/* End */
+
+	/* Navbar Toogle */
+	.navbar-menu {
+		max-height: 0;
+		opacity: 0;
+		overflow: hidden;
+		transition: max-height 0.4s ease, opacity 0.3s ease;
+	}
+
+	.navbar-menu.show {
+		max-height: 500px; /* sesuaikan dengan konten */
+		opacity: 1;
+	}
+
+	.navbar-toggler {
+		background: none;
+		border: none;
+		font-size: 24px;
+	}
+
+	.open-icon,
+	.close-icon {
+		transition: opacity 0.2s ease;
+	}
+
+	.d-none {
+		display: none;
+	}
 	/* End */
 
 	/* Jumbotron */
