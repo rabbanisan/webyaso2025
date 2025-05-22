@@ -3,9 +3,9 @@
     <div class="navbrand">
       <img src="<?= base_url(); ?>Assets/img/logo/logo yadika.png" alt="" />
       <?php if ($this->session->userdata('email')) { ?>
-        <a class="mynavbar-brand navbar-brand fw-bold" href="<?= base_url('Admin') ?>"><?= $title ?></a>
+        <a class="mynavbar-brand navbar-brand fw-bold p-0 ml-2" href="<?= base_url('Admin') ?>"><?= $title ?></a>
       <?php } else { ?>
-        <a class="mynavbar-brand navbar-brand fw-bold" href="<?= base_url('Home') ?>"><?= $title ?></a>
+        <a class="mynavbar-brand navbar-brand fw-bold p-0 ml-2" href="<?= base_url('Home') ?>"><?= $title ?></a>
       <?php } ?>
       <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

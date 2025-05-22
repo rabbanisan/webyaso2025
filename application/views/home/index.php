@@ -6,6 +6,7 @@
     .carousel-item {
       position: relative;
       height: 60vh;
+      /* background-color: #00bfff; */
       /* Menyesuaikan tinggi gambar dengan viewport */
     }
 
@@ -17,7 +18,7 @@
       /* Menggelapkan gambar */
     }
 
-    .carousel-caption {
+    /* .carousel-caption {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -27,7 +28,11 @@
       text-align: center;
       font-size: 1.5rem;
       padding: 0 10px;
-      /* Menambahkan padding horizontal */
+    } */
+
+    .carousel-caption {
+      /* background-color: #0000ff; */
+      top: 15%;
     }
 
     .carousel-caption h1 {
@@ -97,17 +102,17 @@
     @media (min-width: 320px) and (max-width: 767px) {
       .carousel-item {
         height: 45vh;
+        width: 100%;
         /* Menyesuaikan tinggi gambar untuk perangkat kecil */
       }
 
-      .carousel-caption {
-        /* font-size: 1.2rem; */
-        /* padding: 0 5px; */
-        /* Mengurangi padding horizontal */
-      }
+      /* .carousel-caption {
+       
+      } */
 
       .carousel-caption h1 {
         font-size: 1.5rem;
+        width: 100%;
       }
 
       .carousel-caption p {
@@ -298,7 +303,6 @@
       transform: translateY(0);
     }
   </style> -->
-
   <div id="myCarousel"
     class="carousel slide"
     data-bs-ride="carousel"
@@ -466,6 +470,7 @@
     // Generate the calendar for the current month
     generateCalendar(month, year);
   </script>
+
   <!-- Jumbotron -->
   <Style>
     .video-container {
@@ -566,7 +571,7 @@
 
     .brosur-container {
       max-width: 1200px;
-      margin: 5rem 6rem;
+      margin: 2rem 0;
       background-color: #e2e8f0;
       color: #1f2937;
       padding: 1rem 1rem 3rem 1rem;
@@ -578,8 +583,8 @@
     .brosur-title {
       text-align: center;
       font-weight: bold;
-      font-size: 2.25rem;
-      margin: 2rem 0;
+      font-size: 1.5rem;
+      margin: 1rem 0;
     }
 
     .brosur-content {
@@ -589,8 +594,26 @@
     }
 
     @media (min-width: 768px) {
+      .brosur-container {
+        max-width: 1200px;
+        margin: 5rem 6rem;
+        background-color: #e2e8f0;
+        color: #1f2937;
+        padding: 1rem 1rem 3rem 1rem;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
       .brosur-content {
         grid-template-columns: repeat(3, 1fr);
+      }
+
+      .brosur-title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2.25rem;
+        margin: 2rem 0;
       }
     }
 
@@ -680,14 +703,16 @@
       </div>
     </div>
   </div>
-
   <!-- End -->
 
   <!-- kepala sekolah page -->
   <style>
     .kepala-sekolah-container {
-      max-width: 1200px;
-      margin: 7rem auto;
+      /* background-color: #00bfff; */
+      /* max-width: 1200px; */
+      width: 100%;
+      margin: 2rem auto;
+      padding: 2rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -699,11 +724,20 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 4rem;
-      padding: 24px 8px;
+      gap: 1.5rem;
+      padding: 10px 8px;
     }
 
     @media (min-width: 768px) {
+      .kepala-sekolah-container {
+        max-width: 1200px;
+        margin: 7rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
       .kepala-sekolah-content {
         flex-direction: row;
         align-items: center;
@@ -740,7 +774,6 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      font-size: 18px;
     }
 
     @media (min-width: 768px) {
@@ -751,18 +784,29 @@
 
     .kepala-sekolah-title {
       font-weight: bold;
-      font-size: 2.25rem;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .kepala-sekolah-title {
+        font-weight: bold;
+        font-size: 2.25rem;
+        text-align: left;
+      }
     }
 
     .kepala-sekolah-paragraph {
       text-align: justify;
+      font-size: 12pt;
+      margin-bottom: 0;
     }
 
     .kepala-sekolah-footer {
       display: flex;
       flex-direction: column;
-      gap: 8px;
-      margin-top: 16px;
+      gap: 2px;
+      margin-top: 10px;
     }
 
     .kepala-sekolah-signature {
@@ -771,13 +815,12 @@
   </style>
   <section id="kepala-sekolah" class="kepala-sekolah-container">
     <div class="kepala-sekolah-content">
-
       <div class="kepala-sekolah-image-container">
         <img src="<?= base_url(); ?>Assets/img/imageInfo/lead.png" alt="Kepala Sekolah" class="kepala-sekolah-image" />
       </div>
 
       <div class="kepala-sekolah-text">
-        <h1 class="kepala-sekolah-title">Kepala Sekolah Kita</h1>
+        <h1 class="kepala-sekolah-title">Sambutan Kepala Sekolah</h1>
         <p class="kepala-sekolah-paragraph">
           Assalammualikum Wr.Wb.
           Om Swastiastu Namo Budaya Salam Kebajikan Rahayu
@@ -792,16 +835,43 @@
     </div>
     </div>
   </section>
-
   <!-- end -->
 
+  <style>
+    .jurusan h3 {
+      padding: 2% 0;
+    }
+
+    .card-container {
+      display: flex;
+      /* gap: 5px; */
+    }
+
+    .card {
+      /* width: 18rem; */
+      padding: 0;
+    }
+
+    @media (min-width: 320px) and (max-width: 768px) {
+      .card-container {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card {
+        margin: 5% 0;
+      }
+
+    }
+  </style>
   <!-- jurusan -->
   <div class="container">
     <section class="jurusan" id="jurusan">
       <h3 class="text-center fw-bold">Jurusan Apa Yang Tersedia?</h3>
-      <div class="row text-center mt-5 ms-4">
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem">
+      <div class="card-container text-center">
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card mt-0" style="width: 18rem">
             <img src="<?= base_url(); ?>Assets/img/jurusan/account.png" class="card-img-top" alt="" />
             <div class="card-body">
               <h5 class="card-title fw-bold">Akuntansi</h5>
@@ -813,8 +883,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem">
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card mt-0" style="width: 18rem">
             <img src="<?= base_url(); ?>Assets/img/jurusan/software-engineer.png" class="card-img-top" alt="" />
             <div class="card-body">
               <h5 class="card-title fw-bold">Pemograman Perangkat Lunak Dan Gim</h5>
@@ -826,8 +896,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem">
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card mt-0" style="width: 18rem">
             <img src="<?= base_url(); ?>Assets/img/jurusan/pin.png" class="card-img-top" alt="" />
             <div class="card-body">
               <h5 class="card-title fw-bold">Perhotelan</h5>

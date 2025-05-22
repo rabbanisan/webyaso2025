@@ -17,15 +17,13 @@
   .map-container {
     width: 100%;
     height: 13rem;
-    padding-left: 15%;
+    /* padding-left: 15%; */
   }
 
   .map-container iframe {
     width: 100%;
     height: 100%;
   }
-
-  .container-alamat {}
 </style>
 
 <section class="alamat">
