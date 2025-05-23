@@ -1,65 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="<?= base_url();?>Assets/img/logo/logo yadika.png">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
-  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="<?= base_url(); ?>Assets/img/logo/logo yadika.png">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+
 </head>
+
 <body>
   <!-- Bootstrap CSS -->
   <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- My css -->
-    <link rel="stylesheet" href="<?= base_url();?>Assets/style.css" />
-    <link rel="stylesheet" href="<?= base_url();?>Assets/ppdb/style.css" />
-    <!-- icon bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous" />
+  <!-- My css -->
+  <link rel="stylesheet" href="<?= base_url(); ?>Assets/style.css" />
+  <link rel="stylesheet" href="<?= base_url(); ?>Assets/ppdb/style.css" />
+  <!-- icon bootstrap -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 
-    <!-- unicons -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css"
-      rel="stylesheet"
-    />
+  <!-- unicons -->
+  <link
+    rel="stylesheet"
+    href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css"
+    rel="stylesheet" />
 
-    <title>Jurusan PPLG - SMK Yadika Soreang</title>
-    <style>
-      .hero-section {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("lab-software.JPG");
-        background-size: cover;
-        background-position: center;
-        color: white;
-        padding: 100px 0;
-      }
-      .section-title {
-        border-bottom: 3px solid #007bff;
-        padding-bottom: 10px;
-        margin-bottom: 30px;
-      }
-      .card-hover {
-        transition: 0.3s all;
-      }
-      .card-hover:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-      }
-    </style>
+  <title>Jurusan PPLG - SMK Yadika Soreang</title>
+  <style>
+    .hero-section {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("lab-software.JPG");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 0;
+    }
+
+    .section-title {
+      border-bottom: 3px solid #007bff;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+
+    .card-hover {
+      transition: 0.3s all;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+  </style>
   </head>
+
   <body>
     <!-- Hero Section -->
     <header class="hero-section text-center">
@@ -78,9 +80,7 @@
           <div class="col-md-6">
             <p class="mb-4 fw-semibold">
               Jurusan
-              <span class="fw-bold"
-                >Pengembangan Perangkat Lunak dan Gim (PPLG)</span
-              >
+              <span class="fw-bold">Pengembangan Perangkat Lunak dan Gim (PPLG)</span>
               di SMK Yadika Soreang adalah program unggulan yang dirancang untuk
               mempersiapkan siswa menghadapi era digital dan Industri 4.0.
               Dengan kurikulum yang komprehensif dan relevan, kami fokus pada:
@@ -113,8 +113,7 @@
             <img
               src="lab-r&d.JPG"
               alt="Kelas PPLG"
-              class="card-hover img-fluid rounded shadow"
-            />
+              class="card-hover img-fluid rounded shadow" />
           </div>
         </div>
       </div>
@@ -257,8 +256,7 @@
               <img
                 src="lab-r&d.JPG"
                 class="card-img-top"
-                alt="Laboratorium Resource & Development"
-              />
+                alt="Laboratorium Resource & Development" />
               <div class="card-body">
                 <h5 class="card-title">Laboratorium Resource & Development</h5>
                 <p class="card-text">
@@ -274,8 +272,7 @@
               <img
                 src="lab-vfx.JPG"
                 class="card-img-top"
-                alt="Laboratorium VFX"
-              />
+                alt="Laboratorium VFX" />
               <div class="card-body">
                 <h5 class="card-title">Laboratorium VFX</h5>
                 <p class="card-text">
@@ -290,8 +287,7 @@
               <img
                 src="lab-software.JPG"
                 class="card-img-top"
-                alt="Laboratorium Software"
-              />
+                alt="Laboratorium Software" />
               <div class="card-body">
                 <h5 class="card-title">Laboratorium Software</h5>
                 <p class="card-text">
@@ -313,13 +309,11 @@
           <!-- Card 1 -->
           <div class="col-md-4 mb-4">
             <div
-              class="card-hover d-flex flex-column h-100 border rounded shadow-sm p-4 bg-white"
-            >
+              class="card-hover d-flex flex-column h-100 border rounded shadow-sm p-4 bg-white">
               <div class="d-flex align-items-center mb-3">
                 <i
                   class="bi bi-code-slash text-primary"
-                  style="font-size: 2rem"
-                ></i>
+                  style="font-size: 2rem"></i>
                 <h4 class="ms-3 mb-0 text-primary">
                   Pengembangan Perangkat Lunak
                 </h4>
@@ -346,8 +340,7 @@
           <!-- Card 2 -->
           <div class="col-md-4 mb-4">
             <div
-              class="card-hover d-flex flex-column h-100 border rounded shadow-sm p-4 bg-white"
-            >
+              class="card-hover d-flex flex-column h-100 border rounded shadow-sm p-4 bg-white">
               <div class="d-flex align-items-center mb-3">
                 <i class="bi bi-gear text-primary" style="font-size: 2rem"></i>
                 <h4 class="ms-3 mb-0 text-primary">Teknologi Web</h4>
@@ -381,8 +374,7 @@
           <!-- Card 3 -->
           <div class="col-md-4 mb-4">
             <div
-              class="card-hover d-flex flex-column h-100 border rounded shadow-sm p-4 bg-white"
-            >
+              class="card-hover d-flex flex-column h-100 border rounded shadow-sm p-4 bg-white">
               <div class="d-flex align-items-center mb-3">
                 <i class="bi bi-gear text-primary" style="font-size: 2rem"></i>
                 <h4 class="ms-3 mb-0 text-primary">Karir Lainnya</h4>
@@ -424,8 +416,7 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
                 aria-expanded="true"
-                aria-controls="collapseOne"
-              >
+                aria-controls="collapseOne">
                 Apakah saya perlu memiliki pengalaman pemrograman sebelumnya?
               </button>
             </h2>
@@ -433,8 +424,7 @@
               id="collapseOne"
               class="accordion-collapse collapse show"
               aria-labelledby="headingOne"
-              data-bs-parent="#faqAccordion"
-            >
+              data-bs-parent="#faqAccordion">
               <div class="accordion-body">
                 Tidak, Kamu tidak perlu memiliki pengalaman pemrograman
                 sebelumnya. Sekolah kita akan mengajarkan Kamu dari dasar. Yang
@@ -450,8 +440,7 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo"
                 aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
+                aria-controls="collapseTwo">
                 Apakah ada program PKL untuk siswa PPLG?
               </button>
             </h2>
@@ -459,8 +448,7 @@
               id="collapseTwo"
               class="accordion-collapse collapse"
               aria-labelledby="headingTwo"
-              data-bs-parent="#faqAccordion"
-            >
+              data-bs-parent="#faqAccordion">
               <div class="accordion-body">
                 Ya, kami memiliki program PKL sebagai mata pelajaran di kelas 3
                 untuk memberikan pengalaman kerja nyata kepada siswa.
@@ -475,8 +463,7 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
                 aria-expanded="false"
-                aria-controls="collapseThree"
-              >
+                aria-controls="collapseThree">
                 Bagaimana peluang kerja setelah lulus?
               </button>
             </h2>
@@ -484,8 +471,7 @@
               id="collapseThree"
               class="accordion-collapse collapse"
               aria-labelledby="headingThree"
-              data-bs-parent="#faqAccordion"
-            >
+              data-bs-parent="#faqAccordion">
               <div class="accordion-body">
                 Lulusan PPLG memiliki peluang kerja yang sangat baik. Banyak
                 perusahaan teknologi yang mencari lulusan dengan keterampilan
@@ -506,22 +492,19 @@
             <img
               src="lab-vfx.JPG"
               alt="Kegiatan 1"
-              class="card-hover img-fluid rounded"
-            />
+              class="card-hover img-fluid rounded" />
           </div>
           <div class="col-md-4 mb-4">
             <img
               src="lab-r&d.JPG"
               alt="Kegiatan 2"
-              class="card-hover img-fluid rounded"
-            />
+              class="card-hover img-fluid rounded" />
           </div>
           <div class="col-md-4 mb-4">
             <img
               src="lab-software.JPG"
               alt="Kegiatan 3"
-              class="card-hover img-fluid rounded"
-            />
+              class="card-hover img-fluid rounded" />
           </div>
         </div>
       </div>
@@ -531,13 +514,11 @@
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
       integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-      crossorigin="anonymous"
-    ></script>
-</body>
-    
+      crossorigin="anonymous"></script>
+  </body>
+
 </html>

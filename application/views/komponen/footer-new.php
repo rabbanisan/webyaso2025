@@ -88,7 +88,7 @@
     <div class="row text-center">
       <div class="col-md-9">
         <p>
-          All rights reserve to <span>SMK YADIKA SOREANG 2024</span> Ltd.
+          All rights reserve to <span>SMK YADIKA SOREANG 2025</span> Ltd.
         </p>
       </div>
       <div class="col-md-3 social-media">

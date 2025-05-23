@@ -1,11 +1,12 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Jurusan extends CI_Controller {
+class Jurusan extends CI_Controller
+{
 
-	public function __construct(){
+	public function __construct()
+	{
 		parent::__construct();
-		
 	}
 	/**
 	 * Index Page for this controller.
@@ -24,26 +25,38 @@ class Jurusan extends CI_Controller {
 	 */
 	public function pplg()
 	{
-		$data['title'] = 'Profile SMK Yadika Soreang';
-		$this->load->view('komponen/header', $data);
-		$this->load->view('komponen/navbar', $data);
-		$this->load->view('jurusan/pplg', $data);
-		$this->load->view('komponen/footer', $data);
+		$data['title'] = 'SMK Yadika Soreang';
+		// $this->load->view('komponen/header', $data);
+		$this->load->view('komponen/header-new', $data);
+		// $this->load->view('komponen/navbar', $data);
+		$this->load->view('komponen/navbar-new', $data);
+		// $this->load->view('jurusan/pplg', $data);
+		$this->load->view('jurusan/pplg-new', $data);
+		// $this->load->view('komponen/footer', $data);
+		$this->load->view('komponen/footer-new', $data);
 	}
 	public function akuntansi()
 	{
 		$data['title'] = 'SMK Yadika Soreang';
-		$this->load->view('komponen/header', $data);
-		$this->load->view('komponen/navbar', $data);
-		$this->load->view('jurusan/akuntansi', $data);
-		$this->load->view('komponen/footer', $data);
+		// $this->load->view('komponen/header', $data);
+		$this->load->view('komponen/header-new', $data);
+		// $this->load->view('komponen/navbar', $data);
+		$this->load->view('komponen/navbar-new', $data);
+		// $this->load->view('jurusan/akuntansi', $data);
+		$this->load->view('jurusan/akuntansi-new', $data);
+		// $this->load->view('komponen/footer', $data);
+		$this->load->view('komponen/footer-new', $data);
 	}
-    public function perhotelan()
+	public function perhotelan()
 	{
 		$data['title'] = 'SMK Yadika Soreang';
-		$this->load->view('komponen/header', $data);
-		$this->load->view('komponen/navbar', $data);
-		$this->load->view('jurusan/perhotelan', $data);
-		$this->load->view('komponen/footer', $data);
+		// $this->load->view('komponen/header', $data);
+		$this->load->view('komponen/header-new', $data);
+		// $this->load->view('komponen/navbar', $data);
+		$this->load->view('komponen/navbar-new', $data);
+		// $this->load->view('jurusan/perhotelan', $data);
+		$this->load->view('jurusan/perhotelan-new', $data);
+		// $this->load->view('komponen/footer', $data);
+		$this->load->view('komponen/footer-new', $data);
 	}
 }

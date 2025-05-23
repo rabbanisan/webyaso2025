@@ -19,12 +19,18 @@
     <div class="collapse navbar-collapse" id="collapseExample">
       <ul class="mynavbar-nav navbar-nav ms-auto d-flex justify-content-end">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="<?= base_url(); ?>home">Home</a>
+          <!-- <a class="nav-link" aria-current="page" href="<?= base_url(); ?>home">Home</a> -->
+          <a class="nav-link <?= is_active('Home') ?>" href="<?= base_url(); ?>">Home</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Jurusan
-          </a>
+          </a> -->
+          <a class="nav-link dropdown-toggle
+            <?= is_active('Jurusan/pplg'); ?> 
+            <?= is_active('Jurusan/akuntansi'); ?> 
+            <?= is_active('Jurusan/perhotelan'); ?>"
+            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Jurusan</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="<?= base_url(); ?>Jurusan/pplg">PPLG</a></li>
             <li><a class="dropdown-item" href="<?= base_url(); ?>Jurusan/akuntansi">AKUNTANSI</a></li>
@@ -32,7 +38,10 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle
+          <?= is_active('Pojoksiswa/Ekstrakurikuler'); ?>
+          <?= is_active('Pojoksiswa/Penghargaan'); ?>
+          " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Pojok siswa
           </a>
           <ul class="dropdown-menu">
@@ -41,7 +50,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= base_url(); ?>home/profile">Profile</a>
+          <a class="nav-link <?= is_active('home/profile'); ?>" href="<?= base_url(); ?>home/profile">Profile</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?= base_url('Keterangan') ?>">Pendaftar</a>
