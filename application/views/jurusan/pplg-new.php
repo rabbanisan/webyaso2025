@@ -18,7 +18,7 @@
     </div>
   </header>
 
-  <!-- Tentang Perhotelan -->
+  <!-- Tentang PPLG -->
   <section id="tentang" class="py-3">
     <div class="container">
       <h2 class="section-title mb-4 fw-semibold">Tentang Jurusan PPLG</h2>
@@ -188,13 +188,65 @@
     </div>
   </section>
 
+  <!-- Fasilitas -->
+  <section id="fasilitas" class="py-3">
+    <div class="container">
+      <h2 class="section-title mb-4 fw-semibold">Fasilitas</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4 mx-auto d-flex justify-content-center">
+          <div class="card-hover card h-100">
+            <div class=""></div>
+            <img
+              src="/Assets/img/jurusan/Perhotelan/fo_training.jpg"
+              class="card-img-top object-fit-cover"
+              alt="Training Perhotelan" />
+            <div class="card-body">
+              <h5 class="card-title text-center">Front office Training</h5>
+              <p class="card-text">
+                Siswa sedang mengikuti pelatihan Front Office menggunakan fasilitas sekolah.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mx-auto d-flex justify-content-center">
+          <div class="card-hover card h-100 ">
+            <img
+              src="/Assets/img/jurusan/Perhotelan/f&b_training.jpg"
+              class="card-img-top object-fit-cover"
+              alt="Manajemen Event" />
+            <div class="card-body">
+              <h5 class="card-title text-center">F&B Training</h5>
+              <p class="card-text">
+                Siswa sedang mengikuti pelatiha F&B menggunakan fasilitas sekolah.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mx-auto d-flex justify-content-center">
+          <div class="card-hover card h-100">
+            <img
+              src="/Assets/img/jurusan/Perhotelan/MakingBed_training.png"
+              class="card-img-top object-fit-cover"
+              alt="Pelayanan Tamu" />
+            <div class="card-body">
+              <h5 class="card-title text-center">Pelayanan Tamu</h5>
+              <p class="card-text">
+                Siswa sedang mempraktikkan layanan tamu di lingkungan hotel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Prospek Karir -->
   <section id="prospek-karir" class="py-3">
     <div class="container">
       <h2 class="section-title mb-4 fw-semibold">Prospek Karir</h2>
       <div class="row">
         <div class="col-md-4 mb-4 d-flex justify-content-center">
-          <div class="card-hover d-flex flex-column h-100 w-100 border rounded shadow-sm p-4 bg-white">
+          <div class="card-hover h-100 w-100 border rounded shadow-sm p-4 bg-white justify-content-start">
             <div class="card-body d-flex align-items-center gap-3">
               <i
                 class="bi bi-code-slash text-info display-4"></i>
@@ -220,7 +272,7 @@
           </div>
         </div>
         <div class="col-md-4 mb-4 d-flex justify-content-center">
-          <div class="card-hover d-flex flex-column h-100 w-100 border rounded shadow-sm p-4 bg-white">
+          <div class="card-hover h-100 w-100 border rounded shadow-sm p-4 bg-white justify-content-start">
             <div class="card-body d-flex align-items-center gap-3">
               <i
                 class="bi bi-globe text-info display-4"></i>
@@ -252,8 +304,8 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-4 mb-4 d-flex justify-content-center">
-          <div class="card-hover d-flex flex-column h-100 w-100 border rounded shadow-sm p-4 bg-white">
+        <div class="col-md-4 mb-4 d-flex justify-content-start">
+          <div class="card-hover h-100 w-100 border rounded shadow-sm p-4 bg-white">
             <div class="card-body d-flex align-items-center gap-3">
               <i
                 class="bi bi-code-slash text-info display-4"></i>
@@ -414,6 +466,7 @@
       </div>
     </div>
   </section>
+
   <style>
     .hero-section {
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
