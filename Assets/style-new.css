@@ -322,10 +322,18 @@ footer img {
 /* End */
 
 /* phone */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 768px) {
 	/* Navbar */
 	.mynavbar {
 		padding: 10px 5px;
+	}
+
+	.mynavbar img {
+		width: 41px;
+	}
+
+	.mynavbar-brand {
+		margin-left: 10px;
 	}
 
 	.mynavbar-nav {
